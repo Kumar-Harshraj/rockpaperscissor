@@ -5,10 +5,32 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Rock Paper Scissor</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>rock paper scissor game</h1>
-    <p>See the game in .js file</p>
+    <h1 class="heading">Rock Paper Scissors</h1>
+    <section class="introScreen">
+            <button class="playButton">Play Game</button>
+    </section>
+    <section class="gameScreen hidden">
+        <h2 class="result">Choose Your Next Move, first to 5 wins!</h2>
+        <h4 class="score">
+            Current Score:<br>
+            You:<span id="humanScore">0</span><br>
+            Computer:<span id="computerScore">0</span>
+        </h4>
+        <div class="buttonContainer">
+            <button class="game-buttons" data-choice="rock">Rock</button>
+            <button class="game-buttons" data-choice="paper">Paper</button>
+            <button class="game-buttons" data-choice="scissor">Scissor</button>
+        </div>
+    </section>
+     <footer>
+      <p>
+        @ 2026 Kumar Harshraj . Rock-Paper-Scissors .
+        <a href="https://github.com/Kumar-Harshraj/rockpaperscissor">GitHub</a>
+      </p>
+    </footer>
 <script src='main.js'></script>    
 </body>
 </html>
